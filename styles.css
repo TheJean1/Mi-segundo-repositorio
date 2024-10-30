@@ -17,3 +17,10 @@ ul {
     list-style-type: disc;
     padding-left: 20px;
 }
+.table-azul {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+    
