@@ -1,65 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Define el idioma del documento como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <script></script>
-    <title>Información personal</title>
-
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS externo -->
+    <title>Información personal</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+</head>
 <body>
-    <h1>Datos personales</h1>
-    <table>
+    <table> <!-- Tabla para mostrar datos personales -->
+        <tr>
+            <td colspan="2"><h1>Datos personales</h1></td> <!-- Encabezado de la tabla -->
+        </tr>
         <tr>
             <td>Nombre:</td>
-            <td>Jean Andrade</td>
+            <td>Jean Andrade</td> <!-- Nombre del usuario -->
         </tr>
         <tr>
             <td>Edad:</td>
-            <td style="color: blue;">18 años</td>
+            <td id="Edad-color">18 años</td> <!-- Edad del usuario, con un ID para estilos -->
         </tr>
         <tr>
             <td>Correo:</td>
-            <td>jpandradet@pucesi.edu.ec</td>
+            <td>jpandradet@pucesi.edu.ec</td> <!-- Correo electrónico del usuario -->
         </tr>
     </table>
 
-    <div class="table-azul">
+    <div class="table-azul"> <!-- Sección con fondo azul para información adicional -->
         <h3>Información adicional</h3>
         <table>
             <tr>
                 <td>Fecha de nacimiento:</td>
-                <td><input type="date" id="fechaNacimiento"></td>
+                <td><input type="date" id="fechaNacimiento"></td> <!-- Campo para ingresar la fecha de nacimiento -->
             </tr>
             <tr>
                 <td>Cédula:</td>
-                <td><input type="text" id="cedula"></td>
+                <td><input type="text" id="cedula"></td> <!-- Campo para ingresar el número de cédula -->
+            </tr>
+            <tr>
+                <td colspan="2" class="center"><button id="calcular">Calcular</button></td> <!-- Botón para calcular la edad y verificar la cédula -->
+            </tr>
+            <tr>
+                <td id="resultadoEdad" colspan="1"></td> <!-- Lugar para mostrar el resultado de la edad -->
+                <td id="resultadoCedula" colspan="1"></td> <!-- Lugar para mostrar el resultado de la cédula -->
+            </tr>
+            <tr>
+                <td colspan="2" class="error-message" id="errorMensaje"></td> <!-- Lugar para mostrar mensajes de error -->
             </tr>
         </table>
-        <button id="calcular">Calcular</button>
-        <p id="resultado"></p>
     </div>
 
     <h2>Formación</h2>
-    <p>Estoy en proceso de una formación universitaria en la carrera de Tecnología en Desarrollo de Software en la Universidad de Ecuador Pucesi</p>
+    <p>Estoy en proceso de una formación universitaria en la carrera de Tecnología en Desarrollo de Software en la Universidad de Ecuador Pucesi</p> <!-- Información sobre la formación del usuario -->
     <h3>Nombre Completo:</h3>
-    <p>Jean Paul Andrade Tobar</p>
+    <p>Jean Paul Andrade Tobar</p> <!-- Nombre completo del usuario -->
 
     <h1>Mis hobbies</h1>
-    <ul>
+    <ul> <!-- Lista de hobbies -->
         <li>Leer</li>
         <li>Programar</li>
         <li>Jugar videojuegos</li>
-        <li>Escuchar musica</li>
-        <li>Ver series y peliculas</li>
+        <li>Escuchar música</li>
+        <li>Ver series y películas</li>
         <li>Salir a entrenar</li>
     </ul>
 
     <h1>Imagen relevante</h1>
-    <img src="pollo.jpg" alt="Descripción de la imagen" width="300">
-    <p>Esta es la unica imagen relevante que tengo 😭</p>
+    <img src="pollo.jpg" alt="Descripción de la imagen" width="300"> <!-- Imagen con descripción alternativa -->
+    <p>Esta es la única imagen relevante que tengo 😭</p> <!-- Descripción de la imagen -->
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Vincula el archivo JavaScript externo -->
 </body>
 </html>
